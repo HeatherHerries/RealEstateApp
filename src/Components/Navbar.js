@@ -7,7 +7,7 @@ import {BsFillHouseFill} from 'react-icons/bs'
 function Navbar() {
   return (
     <div className='navbar'>
-      <div className='container'></div>
+      <div className='container'>
         <h1><span><BsFillHouseFill />Real</span>Estate</h1>
         <button className='btn'>Sign In</button>
         <ul className='nav-menu'>
@@ -17,8 +17,9 @@ function Navbar() {
           <li><a href='#'>Contact</a></li>
         </ul>
         <div className='hamburger'>
-          <HiOutlineMenuAlt4 />
+          <HiOutlineMenuAlt4 className='icon'/>
         </div>
+      </div>
     </div>
   )
 }
