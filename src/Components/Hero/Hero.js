@@ -2,29 +2,28 @@ import React from 'react'
 import {AiOutlineSearch} from 'react-icons/ai'
 import './Hero.css'
 
+const Hero = () => {
+    return (
+        <div className='hero'>
+            <div className='content'>
+                <h1>Find the perfect home</h1>
+                <p className='search-text'> Search the largest selection of luxury condominiums and single family homes. </p>
+                <form className='search'>
 
-function Hero() {
-  return (
-    <div className='hero'>
-      <div className='content'>
-        <h1>Find the Perfect Home</h1>
-        <p className='search-text'>Search the largest selection of luxury condominiums and single family homes currently available.</p>
-        <form action="" className='search'>
-          <div>
-            <input type="text" placeholder='Enter City, Zip Code or Keyword' />
-            <div className='radio'>
-              <input type="radio" checked />
-              <label>Buy</label>
-              <input type="radio" />
-              <label>Rent</label>
-              <button type='submit'><AiOutlineSearch className='icon' /></button>
+                    <div>
+                        <input type='text' placeholder='Enter Keyword..' />
+                    </div>
+                    <div className='radio'> 
+                        <input type='radio' checked />
+                        <label>Buy</label>
+                        <input type='radio'  />
+                        <label>Rent</label>
+                        <button type='submit'><AiOutlineSearch className='icon'/></button>
+                    </div>
+                </form>
             </div>
-          </div>
-        </form>
-      </div>
-    
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Hero
