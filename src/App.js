@@ -2,6 +2,7 @@
 import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero'
 import Best from './Components/Best/Best'
+import Featured from './Components/Featured/Featured'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Best />
+      <Featured />
     </div>
   );
 }
